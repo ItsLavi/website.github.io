@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavi Brar - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 45%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #name-header {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Adjust the spacing between logos */
+        #resume-icon {
+            margin-left: 740px; /* Add left margin to both logos for spacing */
+            transition: transform 0.3s ease;
+        }
+
+        #linkedin-icon {
+            margin-right: 110px;
+            transition: transform 0.3s ease;
+        }
+
+        #resume-icon:hover,
+        #linkedin-icon:hover {
+            transform: scale(1.5);
+        }
+
+        #main-content {
+            text-align: left;
+            margin-top: 200px; /* space between header and body */
+            margin-right: 20px;
+            padding-left: 120px;
+            position: relative;
+        }
+
+        #main-content::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px; /* Or any size you want */
+        height: 600px; /* Or any size you want */
+        background-color: rgb(255, 241, 249); /* Same color as footer text */
+        border-radius: 50%; /* Makes it a circle */
+        z-index: -1; /* Ensures the circle is behind the content */
+        }
+
+        #main-content h1,
+        #main-content h2,
+        #main-content h3 {
+            margin-bottom: 20px;
+            font-size: 5em;
+            position: relative; /* Add relative positioning */
+        }
+
+        #main-content h2 {
+            text-align: center;
+        }
+
+        #linkedin-icon img,
+        #resume-icon img {
+            height: 25px;
+            width: 25px;
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 350px;
+            text-align: center;
+            margin-left: 550px;
+        }
+
+        footer a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: rgb(210, 70, 140);
+            font-size: larger;
+            font-weight: bold;
+            transition: font-size 100ms;
+        }
+
+        footer a:hover {
+            font-size: 40px;
+        }
+
+        /* Zoom effect for specific words in h1, h2, and h3 */
+        #main-content h1 span,
+        #main-content h2 span,
+        #main-content h3 span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        #main-content h1 span.zoom,
+        #main-content h2 span.zoom,
+        #main-content h3 span.zoom {
+            display: inline-block;
+            transition: transform 0.3s ease, font-size 0.3s ease;
+        }
+
+        #main-content h1 span.zoom:hover,
+        #main-content h2 span.zoom:hover,
+        #main-content h3 span.zoom:hover {
+            transform: scale(2);
+        }
+
+        #main-content h1 span.zoom:hover:before,
+        #main-content h2 span.zoom:hover:before,
+        #main-content h3 span.zoom:hover:before {
+            content: '';
+            display: inline-block;
+            width: 10px; /* Adjust the width of the space around the zoomed chunk */
+        }
+
+        #main-content h1 span.zoom:hover:after,
+        #main-content h2 span.zoom:hover:after,
+        #main-content h3 span.zoom:hover:after {
+            content: '';
+            display: inline-block;
+            width: 10px; /* Adjust the width of the space around the zoomed chunk */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="name-header">Lavi Brar</div>
+            <a id="resume-icon" href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
+                <img src="Images/Resume.png" alt="Resume Logo">
+            </a>
+            <a id="linkedin-icon" href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
+                <img src="Images/linked.png" alt="LinkedIn Icon">
+            </a>
+        </header>
+
+        <div id="main-content">
+            <h1 id="name">
+                <span class="zoom">L</span><span class="zoom">a</span><span class="zoom">v</span><span class="zoom">i</span> <span class="zoom">B</span><span class="zoom">r</span><span class="zoom">a</span><span class="zoom">r</span>
+            </h1>
+            <h2 id="position">
+                <span class="zoom">N</span><span class="zoom">e</span><span class="zoom">t</span><span class="zoom">w</span><span class="zoom">o</span><span class="zoom">r</span><span class="zoom">k</span> <span class="zoom">E</span><span class="zoom">n</span><span class="zoom">g</span><span class="zoom">i</span><span class="zoom">n</span><span class="zoom">e</span><span class="zoom">e</span><span class="zoom">r</span>
+            </h2>
+            <h3 id="city">
+                <span class="zoom">P</span><span class="zoom">a</span><span class="zoom">p</span><span class="zoom">a</span><span class="zoom">k</span><span class="zoom">u</span><span class="zoom">r</span><span class="zoom">a</span>, <span class="zoom">A</span><span class="zoom">u</span><span class="zoom">c</span><span class="zoom">k</span><span class="zoom">l</span><span class="zoom">a</span><span class="zoom">n</span><span class="zoom">d</span>
+            </h3>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\about.html">About</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\experience.html">Experience</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\certificates.html">Certificates</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\contact.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

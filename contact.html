@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavi Brar - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 45%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #name-header {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #resume-icon {
+            margin-left: 755px; /* Add left margin to both logos for spacing */
+            transition: transform 0.3s ease;
+        }
+
+        #linkedin-icon {
+            margin-right: 110px;
+            transition: transform 0.3s ease;
+        }
+
+        #resume-icon:hover,
+        #linkedin-icon:hover {
+            transform: scale(1.5);
+        }
+
+        #main-content {
+            text-align: center;
+            margin-top: 100px;
+            margin-right: 80px;
+            padding-left: 120px;
+            position: relative;
+        }
+
+        
+        /*
+        #main-content h1
+        {
+            color: rgb(228, 202, 217);
+            margin-bottom: 30px;
+            font-size: 3em;
+            position: relative;
+        }
+        */
+        #main-content h1 {
+            text-align: center;
+            margin-right: 200px;
+        }
+
+        #linkedin-icon img,
+        #resume-icon img {
+            height: 25px;
+            width: 25px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 300px;
+            margin-right: 150px;
+        }
+
+        .contact-info img {
+            width: 120px;
+            height: 120px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            margin: 0 100px;
+        }
+
+        .contact-info img:hover {
+            transform: scale(1.2);
+        }
+        
+        .details-popup {
+            
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 150px; /* Adjust this value for the desired spacing */
+            padding: 10px;   /* Or use padding for spacing */
+            font-size: 50px;
+            color:rgb(240, 219, 230);
+        }
+
+        .fade-in-out {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .fade-in-out.active {
+            opacity: 1;
+        }
+
+        footer {
+            margin-top: 600px;
+            text-align: center;
+            margin-left: 550px;
+        }
+
+        footer a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: rgb(210, 70, 140);
+            font-size: larger;
+            font-weight: bold;
+            transition: font-size 100ms;
+        }
+
+        footer a:hover {
+            font-size: 40px;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="name-header">Contact</div>
+            <a id="resume-icon" href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
+                <img src="Images/Resume.png" alt="Resume Logo">
+            </a>
+            <a id="linkedin-icon" href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
+                <img src="Images/linked.png" alt="LinkedIn Icon">
+            </a>
+        </header>
+        
+        <div id="main-content">
+            <div class="about-section"> 
+                <h1></h1>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\address.png" alt="Address" onclick="showDetails('address')">
+                    <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\email.png" alt="Email" onclick="showDetails('email')">
+                    <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\phone.png" alt="Phone" onclick="showDetails('phone')">
+                </div>
+
+                <!-- Details Popup -->
+                <div class="details-popup fade-in-out" id="address-details">
+                    <p>Papakura, Auckland</p>
+                </div>
+                <div class="details-popup fade-in-out" id="email-details">
+                    <p>lavibrar200@gmail.com</p>
+                </div>
+                <div class="details-popup fade-in-out" id="phone-details">
+                    <p>022 435 7532</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\index.html">Home</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\about.html">About</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\experience.html">Experience</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\certificates.html">Certificates</a>
+        </footer>
+    </div>
+
+    <!-- ... (your existing body content) ... -->
+
+    <script>
+        function showDetails(detailsId) {
+            // Show the selected details popup with a smooth transition
+            var selectedDetails = document.getElementById(detailsId + '-details');
+            if (selectedDetails) {
+                selectedDetails.classList.add('active');
+            }
+        }
+    
+        function hideDetails(detailsId) {
+            // Hide the selected details popup with a smooth transition
+            var selectedDetails = document.getElementById(detailsId + '-details');
+            if (selectedDetails) {
+                selectedDetails.classList.remove('active');
+            }
+        }
+    
+        // Add event listeners to handle mouseover and mouseout events
+        var contactImages = document.querySelectorAll('.contact-info img');
+        contactImages.forEach(function (image) {
+            image.addEventListener('mouseover', function () {
+                showDetails(image.alt.toLowerCase());
+            });
+            image.addEventListener('mouseout', function () {
+                hideDetails(image.alt.toLowerCase());
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
+
+
+</body>
+</html>

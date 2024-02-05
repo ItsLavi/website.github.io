@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavi Brar - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 45%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #name-header {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #resume-icon {
+            margin-left: 640px;
+            transition: transform 0.3s ease;
+        }
+
+        #linkedin-icon {
+            margin-right: 110px;
+            transition: transform 0.3s ease;
+        }
+
+        #resume-icon:hover,
+        #linkedin-icon:hover {
+            transform: scale(1.5);
+        }
+
+        #main-content {
+            margin-top: 100px;
+            text-align: left;
+            position: relative;
+            margin-right: 0px;
+            padding-left: 70px;
+        }
+
+        .experience-box {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 830px;
+            max-height: 100px;
+            margin-left: 30px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-box:hover {
+            transform: scale(1.3);
+        }
+
+        .experience-box img {
+            margin-right: 20px;
+            max-width: 100px;
+            border-radius: 10px;
+        }
+
+        .experience-box:hover img {
+             transform: scale(1.1);
+        }
+
+        .experience-content {
+            flex: 1;
+        }
+
+        #main-content h2 {
+            color: rgb(226, 159, 193);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .experience-description {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .additional-text {
+            font-size: 0.9em; /* Adjust the font size as needed */
+            line-height: 1.4;
+        }
+
+        #resume-icon img,
+        #linkedin-icon img {
+            height: 25px;
+            width: 25px;
+        }
+
+        footer {
+            margin-top: 110px;
+            text-align: center;
+            margin-left: 515px
+        }
+
+        footer a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: rgb(210, 70, 140);
+            font-size: larger;
+            font-weight: bold;
+            transition: font-size 100ms;
+        }
+
+        footer a:hover {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="name-header">Work Experience</div>
+            <div id="resume-icon">
+                <a href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
+                    <img src="Images/Resume.png" alt="Resume Logo">
+                </a>
+            </div>
+            <div id="linkedin-icon">
+                <a href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
+                    <img src="Images/linked.png" alt="LinkedIn Icon">
+                </a>
+            </div>
+        </header>
+
+        <div id="main-content">
+            <div class="experience-box">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\omg.png" alt="Experience 1 Photo">
+                <div class="experience-content">
+                    <h2>Omnicom Media Group</h2>
+                    <p class="experience-description">Senior Service Desk/Application Support Analyst</p>
+                    <p class="additional-text">Dec 2021- January 2024</p>
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\aut.png" alt="Experience 2 Photo">
+                <div class="experience-content">
+                    <h2>Auckland University of Technology</h2>
+                    <p class="experience-description">ICT Service Desk and Support Technician</p>
+                    <p class="additional-text">Mar 2021 – Dec 2021</p>
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\skycity.png" alt="Experience 3 Photo">
+                <div class="experience-content">
+                    <h2>Skycity</h2>
+                    <p class="experience-description">Service Desk Analyst</p>
+                    <p class="additional-text">Oct 2020 – Dec 2020</p>
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\fujitsu.png" alt="Experience 4 Photo">
+                <div class="experience-content">
+                    <h2>Fujitsu</h2>
+                    <p class="experience-description">Service Desk Analyst</p>
+                    <p class="additional-text">Feb 2019 – Jun 2020</p>
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\dominos.png" alt="Experience 5 Photo">
+                <div class="experience-content">
+                    <h2>Domino's Pizza</h2>
+                    <p class="experience-description">Manager</p>
+                    <p class="additional-text">Mar 2014 – Feb 2019</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\index.html">Home</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\about.html">About</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\certificates.html">Certificates</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\contact.html">Contact</a>
+        </footer>
+    </div>
+</body>
+
+</html>

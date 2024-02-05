@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavi Brar - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 45%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        #name-header {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #resume-icon {
+            margin-left: 703px; /* Add left margin to both logos for spacing */
+            transition: transform 0.3s ease;
+        }
+
+        #linkedin-icon {
+            margin-right: 110px;
+            transition: transform 0.3s ease;
+        }
+
+        #resume-icon:hover,
+        #linkedin-icon:hover {
+            transform: scale(1.5);
+        }
+ 
+        #main-content {
+            text-align: left;
+            margin-top: 200px;
+            margin-right: 20px;
+            padding-left: 120px;
+            position: relative;
+        }
+
+        #main-content h1,
+        #main-content h2,
+        #main-content h3 {
+            margin-bottom: 20px;
+            font-size: 5em;
+            position: relative;
+        }
+
+        #main-content h2 {
+            text-align: center;
+        }
+
+        #linkedin-icon img,
+        #resume-icon img {
+            height: 25px;
+            width: 25px;
+        }
+
+        footer {
+            margin-top: 370px;
+            text-align: center;
+            margin-left: 550px;
+        }
+
+        footer a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: rgb(210, 70, 140);
+            font-size: larger;
+            font-weight: bold;
+            transition: font-size 100ms;
+        }
+
+        footer a:hover {
+            font-size: 40px;
+        }
+
+        .zoomable-image:first-child {
+            margin-right: 50px; /* Adjust this value to move the first image to the left */
+        }
+
+
+        .zoomable-image {
+            display: inline-block;
+            margin-right: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .zoomable-image:hover {
+            transform: scale(1.2);
+        }
+
+        .zoomable-image img {
+            width: 450px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="name-header">Certificates</div>
+            <a id="resume-icon" href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
+                <img src="Images/Resume.png" alt="Resume Logo">
+            </a>
+            <a id="linkedin-icon" href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
+                <img src="Images/linked.png" alt="LinkedIn Icon">
+            </a>
+        </header>
+
+        <div id="main-content">
+            <!-- Empty content, you can add your certificate content here if needed -->
+
+            <!-- Clickable and Zoomable Images -->
+            <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank" class="zoomable-image">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\aws.png" alt="Image 1">
+            </a>
+            <a href="https://www.credly.com/badges/b14c2553-8b26-471a-aa5f-45f49f35260b/public_url" target="_blank" class="zoomable-image">
+                <img src="C:\Users\lavib\OneDrive\Desktop\Persona Project\My Website\Images\azure.png" alt="Image 2">
+            </a>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\index.html">Home</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\about.html">About</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\experience.html">Experience</a>
+            <a href="C:\Users\lavib\OneDrive\Desktop\Persona Project\portfoliowebsite.github.io\contact.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>
