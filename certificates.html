@@ -68,29 +68,38 @@
         }
 
         .cert-grid {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
-            justify-content: flex-start;
+            max-width: 600px;
+        }
+
+        .cert-grid a {
+            display: block;
+            text-align: center;
         }
 
         .cert-grid a img {
-            width: 260px;
+            width: 100%;
+            max-width: 260px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            background: none;
-            border: none;
-            transition: transform 0.3s ease;
+            
+            /* This removes white backgrounds from images */
+            mix-blend-mode: multiply;
+            
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .cert-grid a img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
 
         /* Footer */
         footer {
-            margin-top: 150px; /* moved closer */
+            margin-top: 150px;
             text-align: center;
             margin-left: 550px;
         }
@@ -106,6 +115,13 @@
 
         footer a:hover {
             font-size: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
     </style>
