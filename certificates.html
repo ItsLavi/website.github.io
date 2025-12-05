@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lavi Brar - Certificates</title>
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
 
@@ -15,36 +17,56 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+        /* MATCH INDEX.HTML LAYOUT */
+        .container {
+            max-width: 45%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        /* Header matches index.html */
         header {
             display: flex;
             justify-content: space-between;
-            padding: 30px 60px;
             align-items: center;
+            padding: 40px;
+            background-color: #fff;
         }
 
         #name-header {
             font-family: 'Oswald', sans-serif;
-            font-size: 2.2em;
+            font-size: 2em;
             font-weight: bold;
         }
 
-        header img {
-            height: 30px;
-            width: 30px;
+        /* Icon styling identical to index.html */
+        #resume-icon {
+            margin-left: 740px;
             transition: transform 0.3s ease;
         }
 
-        header a:hover img {
-            transform: scale(1.4);
+        #linkedin-icon {
+            margin-right: 110px;
+            transition: transform 0.3s ease;
         }
 
-        /* New clean certificate grid */
+        #resume-icon img,
+        #linkedin-icon img {
+            height: 25px;
+            width: 25px;
+        }
+
+        #resume-icon:hover,
+        #linkedin-icon:hover {
+            transform: scale(1.5);
+        }
+
+        /* CERTIFICATE GRID */
         .cert-grid {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 80px;
-            padding-bottom: 200px; /* NEW — pushes footer down */
+            gap: 60px;
+            margin-top: 200px; /* matches main-content spacing */
         }
 
         .cert-grid img {
@@ -57,6 +79,7 @@
             transform: scale(1.15);
         }
 
+        /* Footer identical to index.html */
         footer {
             margin-top: 350px;
             text-align: center;
@@ -79,44 +102,44 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <header>
-        <div id="name-header">Certificates</div>
+        <!-- Header -->
+        <header>
+            <div id="name-header">Certificates</div>
 
-        <div>
-            <a href="https://lavi-resume.tiiny.site/" target="_blank">
-                <img src="Images/Resume.png" alt="Resume">
+            <a id="resume-icon" href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
+                <img src="Images/Resume.png" alt="Resume Logo">
             </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank">
-                <img src="Images/linked.png" alt="LinkedIn">
+
+            <a id="linkedin-icon" href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
+                <img src="Images/linked.png" alt="LinkedIn Icon">
+            </a>
+        </header>
+
+        <!-- Certificates -->
+        <div class="cert-grid">
+            <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank">
+                <img src="Images/aws.png" alt="AWS">
+            </a>
+
+            <a href="https://www.credly.com/badges/b14c2553-8b26-471a-aa5f-45f49f35260b/public_url" target="_blank">
+                <img src="Images/azure.png" alt="Azure">
+            </a>
+
+            <a href="https://www.credly.com/badges/7dc7c128-200c-4054-af71-0ba658957951/public_url" target="_blank">
+                <img src="Images/CCNA.png" alt="CCNA">
             </a>
         </div>
-    </header>
 
-    <!-- Certificate Grid -->
-    <div class="cert-grid">
-        <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank">
-            <img src="https://itslavi.github.io/website.github.io/Images/aws.png" alt="AWS">
-        </a>
+        <!-- Footer -->
+        <footer>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/contact.html">Contact</a>
+        </footer>
 
-        <a href="https://www.credly.com/badges/b14c2553-8b26-471a-aa5f-45f49f35260b/public_url" target="_blank">
-            <img src="https://itslavi.github.io/website.github.io/Images/azure.png" alt="Azure">
-        </a>
-
-        <a href="https://www.credly.com/badges/7dc7c128-200c-4054-af71-0ba658957951/public_url" target="_blank">
-            <img src="https://itslavi.github.io/website.github.io/Images/CCNA.png" alt="CCNA">
-        </a>
     </div>
-
-    <footer>
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/experience.html">Experience</a>
-        <a href="/contact.html">Contact</a>
-    </footer>
-
 </body>
 </html>
-
-
