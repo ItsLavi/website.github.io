@@ -23,6 +23,7 @@
             padding: 45px;
         }
 
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -58,21 +59,14 @@
             transform: scale(1.5);
         }
 
+        /* Certificates Grid */
         #main-content {
             text-align: left;
             margin-top: 150px;
             margin-right: 80px;
             padding-left: 120px;
-            position: relative;
         }
 
-        #main-content h1 {
-            color: rgb(210, 70, 140);
-            margin-bottom: 40px;
-            font-size: 1.8em;
-        }
-
-        /* Certificates Grid */
         .cert-grid {
             display: flex;
             flex-wrap: wrap;
@@ -85,6 +79,8 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: none;
+            border: none;
             transition: transform 0.3s ease;
         }
 
@@ -92,8 +88,9 @@
             transform: scale(1.1);
         }
 
+        /* Footer */
         footer {
-            margin-top: 320px;
+            margin-top: 150px; /* moved closer */
             text-align: center;
             margin-left: 550px;
         }
@@ -110,6 +107,7 @@
         footer a:hover {
             font-size: 40px;
         }
+
     </style>
 </head>
 
@@ -129,7 +127,6 @@
 
         <!-- Main Content -->
         <div id="main-content">
-            <h1>My Certificates</h1>
             <div class="cert-grid">
                 <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank">
                     <img src="Images/aws.png" alt="AWS">
