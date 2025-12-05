@@ -11,10 +11,10 @@
 
     <style>
         body {
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fff;
-            font-family: 'Open Sans', sans-serif;
         }
 
         .container {
@@ -23,7 +23,6 @@
             padding: 45px;
         }
 
-        /* Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -39,7 +38,7 @@
         }
 
         #resume-icon {
-            margin-left: 740px;
+            margin-left: 733px;
             transition: transform 0.3s ease;
         }
 
@@ -59,58 +58,44 @@
             transform: scale(1.5);
         }
 
-        /* Main content with circular background */
         #main-content {
-            text-align: center;
+            text-align: left;
             margin-top: 150px;
+            margin-right: 80px;
+            padding-left: 120px;
             position: relative;
-            padding: 40px 0;
-        }
-
-        #main-content::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 700px;
-            height: 700px;
-            background-color: rgb(255, 241, 249);
-            border-radius: 50%;
-            z-index: -1;
         }
 
         #main-content h1 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 3em;
-            margin-bottom: 50px;
+            color: rgb(210, 70, 140);
+            margin-bottom: 40px;
+            font-size: 1.8em;
         }
 
-        /* Certificates grid */
+        /* Certificates Grid */
         .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 50px;
-            justify-items: center;
-            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: flex-start;
         }
 
-        .cert-grid img {
-            width: 100%;
-            max-width: 260px;
-            border-radius: 10px;
+        .cert-grid a img {
+            width: 260px;
+            height: auto;
+            border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
-        .cert-grid img:hover {
+        .cert-grid a img:hover {
             transform: scale(1.1);
         }
 
-        /* Footer */
         footer {
-            margin-top: 100px;
+            margin-top: 320px;
             text-align: center;
+            margin-left: 550px;
         }
 
         footer a {
@@ -134,11 +119,9 @@
         <!-- Header -->
         <header>
             <div id="name-header">Certificates</div>
-
             <a id="resume-icon" href="https://lavi-resume.tiiny.site/" target="_blank" title="Resume Website">
                 <img src="Images/Resume.png" alt="Resume Logo">
             </a>
-
             <a id="linkedin-icon" href="https://www.linkedin.com/in/lavi-brar-55311876/" target="_blank" title="LinkedIn Profile">
                 <img src="Images/linked.png" alt="LinkedIn Icon">
             </a>
@@ -169,8 +152,8 @@
         <!-- Footer -->
         <footer>
             <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
             <a href="/experience.html">Experience</a>
+            <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
         </footer>
 
