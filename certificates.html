@@ -17,14 +17,13 @@
             font-family: 'Open Sans', sans-serif;
         }
 
-        /* MATCH INDEX.HTML LAYOUT */
         .container {
             max-width: 45%;
             margin: 0 auto;
             padding: 45px;
         }
 
-        /* Header matches index.html */
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -39,7 +38,6 @@
             font-weight: bold;
         }
 
-        /* Icon styling identical to index.html */
         #resume-icon {
             margin-left: 740px;
             transition: transform 0.3s ease;
@@ -61,29 +59,58 @@
             transform: scale(1.5);
         }
 
-        /* CERTIFICATE GRID */
+        /* Main content with circular background */
+        #main-content {
+            text-align: center;
+            margin-top: 150px;
+            position: relative;
+            padding: 40px 0;
+        }
+
+        #main-content::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 700px;
+            background-color: rgb(255, 241, 249);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        #main-content h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+
+        /* Certificates grid */
         .cert-grid {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-top: 200px; /* matches main-content spacing */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 50px;
+            justify-items: center;
+            align-items: center;
         }
 
         .cert-grid img {
-            width: 260px;
-            height: auto;
+            width: 100%;
+            max-width: 260px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
 
         .cert-grid img:hover {
-            transform: scale(1.15);
+            transform: scale(1.1);
         }
 
-        /* Footer identical to index.html */
+        /* Footer */
         footer {
-            margin-top: 350px;
+            margin-top: 100px;
             text-align: center;
-            margin-left: 550px;
         }
 
         footer a {
@@ -117,23 +144,26 @@
             </a>
         </header>
 
-        <!-- Certificates -->
-        <div class="cert-grid">
-            <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank">
-                <img src="Images/aws.png" alt="AWS">
-            </a>
+        <!-- Main Content -->
+        <div id="main-content">
+            <h1>My Certificates</h1>
+            <div class="cert-grid">
+                <a href="https://www.credly.com/badges/62ae631b-d9c9-49bb-9060-3eb774e9515b/public_url" target="_blank">
+                    <img src="Images/aws.png" alt="AWS">
+                </a>
 
-            <a href="https://www.credly.com/badges/b14c2553-8b26-471a-aa5f-45f49f35260b/public_url" target="_blank">
-                <img src="Images/azure.png" alt="Azure">
-            </a>
+                <a href="https://www.credly.com/badges/b14c2553-8b26-471a-aa5f-45f49f35260b/public_url" target="_blank">
+                    <img src="Images/azure.png" alt="Azure">
+                </a>
 
-            <a href="https://www.credly.com/badges/7dc7c128-200c-4054-af71-0ba658957951/public_url" target="_blank">
-                <img src="Images/CCNA.png" alt="CCNA">
-            </a>
+                <a href="https://www.credly.com/badges/7dc7c128-200c-4054-af71-0ba658957951/public_url" target="_blank">
+                    <img src="Images/CCNA.png" alt="CCNA">
+                </a>
 
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/LaviBrar-8685/6DA5858207EF9F77?sharingId=1686A038BFA407F1" target="_blank">
-                <img src="Images/AZ-104.png" alt="AZ-104">
-            </a>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/LaviBrar-8685/6DA5858207EF9F77?sharingId=1686A038BFA407F1" target="_blank">
+                    <img src="Images/AZ-104.png" alt="AZ-104">
+                </a>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -147,4 +177,3 @@
     </div>
 </body>
 </html>
-
